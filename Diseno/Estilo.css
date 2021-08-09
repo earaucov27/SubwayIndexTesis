@@ -1,0 +1,137 @@
+.TxtMin{
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: arial;
+  color: #757575;
+}
+.TxtMin1{
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: arial;
+  color: #757575;
+}
+.link1{
+  text-decoration: none;
+}
+.opciones1{
+  display: block;
+  width: 122px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 14px;
+}
+.opciones1:hover{
+  display: block;
+  width: 122px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffea00;
+  font-family: arial;
+  font-size: 14px;
+}
+.op{
+  background-color: #1b5e20;
+  height: 40px;
+}
+.op1{
+  background-color: #558b2f;
+  height: 40px;
+}
+.op2{
+  background-color: #2e7d32;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-transform: uppercase;
+}
+
+/*IMAGENES*/
+.banner1{
+  width: auto;
+  height: 40px;
+}
+.Ima1{
+  width: 1100px;
+  height: 600px;
+}
+.Ifr1{
+  width: 1350px;
+  height: 1500px;
+  border: none;
+}
+
+
+/*
+<td>
+<h6>Cantidad</h6>
+<select class="browser-default">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="3">4</option>
+    <option value="3">5</option>
+    <option value="3">6</option>
+    <option value="3">7</option>
+    <option value="3">8</option>
+    <option value="3">9</option>
+    <option value="3">10</option>
+  </select>
+</td>
+<td>
+<h6>Precio</h6>
+<label>$ 4.590</label>
+</td>
+
+<td colspan="1">
+  <div class="row">
+    <h6>Salsas</h6>
+  </div>
+
+  <td colspan="1">
+    <div class="row">
+      <h6>Vegetales</h6>
+    </div>
+
+      <?php
+        $lista = $d->CheckVegetales();
+        //print_r($lista);
+        for($i=0; $i < count($lista); $i++){
+          $v = $lista[$i];
+          $cod = $v->getCodigoVeg();
+          $nom = $v->getNombreVeg();
+          echo "<p>";
+          echo "<label>";
+          echo "<input type='checkbox' name='OpVeg' class='filled-in'/>";
+          echo "<span name='OpVeg' value='$cod'>$nom</span>";
+          echo "</label>";
+          echo "</p>";
+        }
+      ?>
+  </td>
+
+
+  <?php
+      $lista = $d->CheckSalsas();
+      //print_r($lista);
+      for($i=0; $i < count($lista); $i++){
+        $s = $lista[$i];
+        $cod = $s->getCodigoSal();
+        $nom = $s->getNombreSal();
+        echo "<p>";
+        echo "<label>";
+        echo "<input type='checkbox' name='OpSal' class='filled-in'/>";
+        echo "<span value='$cod'>$nom</span>";
+        echo "</label>";
+        echo "</p>";
+      }
+    ?>
+</td>
+
+
+*/
